@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Mirrors cuisko/src/global/theme.ts — keep the two in sync. */
+:root {
+  --neutral-0: #FFFCFA;
+  --neutral-100: #FAF2ED;
+  --neutral-200: #EDE0D5;
+  --neutral-500: #9C8A7C;
+  --neutral-900: #1C0E03;
+  --primary-100: #FFD0B3;
+  --primary-300: #FF9C5E;
+  --primary-500: #FF6B0F;
+  --secondary-50: #F7FFF9;
+  --secondary-100: #BAE8BB;
+  --secondary-300: #70CF71;
+  --secondary-500: #37A637;
+}
+
+@theme inline {
+  --color-background: var(--neutral-0);
+  --color-foreground: var(--neutral-900);
+  --color-muted: var(--neutral-500);
+  --color-neutral-0: var(--neutral-0);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-900: var(--neutral-900);
+  --color-primary-100: var(--primary-100);
+  --color-primary-300: var(--primary-300);
+  --color-primary-500: var(--primary-500);
+  --color-secondary-50: var(--secondary-50);
+  --color-secondary-100: var(--secondary-100);
+  --color-secondary-300: var(--secondary-300);
+  --color-secondary-500: var(--secondary-500);
+  --font-sans: var(--font-inter-sans);
+  --font-display: var(--font-nunito);
+  --radius-xs: 6px;
+  --radius-sm: 16px;
+  --radius-md: 20px;
+  --radius-lg: 24px;
+}
+
+body {
+  background: var(--neutral-0);
+  color: var(--neutral-900);
+  font-family: var(--font-sans);
+}
+
+/* The app's H4 face: Nunito at 750, tight tracking. */
+.font-display {
+  font-family: var(--font-nunito);
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.prose {
+  font-family: var(--font-inter-sans);
+}
+
+.prose h1 {
+  font-family: var(--font-nunito);
+  font-weight: 750;
+  color: var(--neutral-900);
+}
+
