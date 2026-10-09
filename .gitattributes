@@ -1,0 +1,26 @@
+# Line endings are a property of THIS repository, not of each contributor's git config.
+#
+# Without this file, `core.autocrlf` decides — so a fresh clone on Windows writes
+# .githooks/pre-commit with CRLF, making its shebang `#!/bin/sh\r`. Git Bash tolerates that;
+# Linux and macOS do not, and fail every commit with "bad interpreter: No such file or
+# directory".
+* text=auto eol=lf
+
+# Shell scripts must be LF or they do not execute. Restated explicitly: this is the one that
+# actually breaks, and it should survive anyone relaxing the blanket rule above.
+.githooks/** text eol=lf
+*.sh text eol=lf
+
+pnpm-lock.yaml -diff linguist-generated=true
+
+# Binary assets — never transform, never diff.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary

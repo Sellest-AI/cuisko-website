@@ -1,0 +1,4 @@
+allowBuilds:
+  # next/image optimisation and eslint resolver need their native bindings.
+  sharp: true
+  unrs-resolver: true
