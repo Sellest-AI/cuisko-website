@@ -6,6 +6,8 @@ already own.**
 It holds the landing page, the contact and support pages, and the legal pages the app and its store
 listings link to. The site is static and has no backend. The app itself lives in its own repository.
 
+> **This repository is public for viewing only.** It is not open source. See [License](#license).
+
 ## Stack
 
 - **Framework:** Next.js (App Router)
@@ -54,3 +56,8 @@ pnpm dev       # http://localhost:3000
 ## License
 
 Copyright (c) 2026 Sellest-AI. All rights reserved.
+
+The source, text, images and videos are published so they can be read. They may not be used,
+copied, modified or redistributed without written permission. These terms cover every commit in the
+history, including those made before the license was added. The full terms are in
+[LICENSE](LICENSE).
