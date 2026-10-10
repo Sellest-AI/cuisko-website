@@ -8,13 +8,14 @@ export const Phone = ({ screen, alt = "", className, priority }: {
   className?: string
   priority?: boolean
 }) => (
-  <div className={cn("relative bg-neutral-900 p-[7px] rounded-[42px] shadow-[0_30px_60px_-20px_rgba(28,14,3,0.5)]", className)}>
-    <div className="relative rounded-[35px] overflow-hidden bg-neutral-0">
+  <div className={cn("relative bg-neutral-900 p-1.5 rounded-[30px] shadow-[0_56px_110px_-24px_rgba(28,14,3,0.2)]", className)}>
+    <div className="relative rounded-[24px] overflow-hidden bg-neutral-0">
       <Image
         src={`/assets/screens/${screen}.webp`}
         alt={alt}
-        width={674}
-        height={1400}
+        width={720}
+        height={1560}
+        sizes="300px"
         className="w-full h-auto"
         priority={priority}
       />

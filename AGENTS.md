@@ -15,6 +15,14 @@ pnpm build         # production build — run it when touching routes, content/ 
 ## Pointers
 
 - Colors in `src/app/globals.css` mirror `../cuisko/src/global/theme.ts` — keep the two in sync.
+- The site speaks the app's UI, not a separate brand: `src/ui/components/` are web ports of
+  `../cuisko/src/ui/components` (`ButtonPill`, `MealCard`, plate carousel,
+  `TiltedPhoto`), and `glass` / `bg-screen` / `glow` in `globals.css` are the app's frosted surface,
+  screen gradient and `RadialGradient`. Port from the app before inventing a new component.
+- Images in `public/assets` come from the portfolio (`../portfolios/portfolio-2026`), which holds
+  the most recent screens and renders; cut-outs it lacks come from `../cuisko/assets`. Plates are
+  hand-picked from the app's own generated `plateImageId` images (Convex dev deployment), downscaled
+  to 600px — pick for appetite, a full round plate and clean cut-out edges.
 - Legal pages render `content/*.md` through MDX. The publisher details there, on `/contact` and in
   the app's own policies must stay identical.
 - Site-wide constants (URLs, support email) live in `src/global/website.ts`.

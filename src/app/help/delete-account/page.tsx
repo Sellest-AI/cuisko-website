@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { Mail } from "lucide-react"
 import { Metadata } from "next"
-import { Header } from "@/components/header"
 import { WEBSITE } from "@/global"
 
 export const metadata: Metadata = {
@@ -13,11 +12,12 @@ const MAILTO = `mailto:${WEBSITE.SUPPORT_EMAIL}?subject=Account%20Deletion%20Req
 
 export default function DeleteAccountPage() {
   return (
-    <main className="px-4 sm:px-6 pt-6 pb-24">
-      <div className="max-w-6xl mx-auto mb-16"><Header /></div>
-      <div className="max-w-2xl mx-auto">
+    <main className="relative overflow-hidden bg-screen px-4 sm:px-6 pt-5 sm:pt-6 pb-24">
+      <div className="glow size-[800px] -top-[400px] -left-[350px] opacity-10" />
+      <div className="h-14 mb-16" />
+      <div className="relative max-w-2xl mx-auto">
         <Image
-          src="/assets/mascot/cuisko-winking-head.webp"
+          src="/assets/mascot/winking-head.webp"
           alt=""
           width={56}
           height={56}
@@ -28,7 +28,7 @@ export default function DeleteAccountPage() {
           We&apos;re sad to see you go! You can delete your {WEBSITE.NAME} account and all its data at any time.
         </p>
 
-        <div className="mt-10 bg-neutral-100 rounded-lg p-7">
+        <div className="mt-10 glass shadow-soft rounded-md p-7">
           <h2 className="font-display text-2xl">From the app</h2>
           <ol className="list-decimal pl-5 mt-4 space-y-1 text-neutral-900/80">
             <li>Open {WEBSITE.NAME} and go to your <strong>Account</strong> settings.</li>
@@ -39,14 +39,14 @@ export default function DeleteAccountPage() {
           </p>
         </div>
 
-        <div className="mt-6 bg-primary-100 rounded-lg p-7">
+        <div className="mt-6 bg-primary-100 rounded-md p-7">
           <h2 className="font-display text-2xl">By email</h2>
           <p className="text-neutral-900/80 mt-3">
             No longer have the app? Send us a request from the email address linked to your account and we&apos;ll delete it for you.
           </p>
           <a
             href={MAILTO}
-            className="inline-flex items-center gap-3 mt-6 bg-primary-500 text-white rounded-full px-6 py-3 font-semibold hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-3 mt-6 border-2 border-white/20 bg-primary-500 text-white rounded-full px-6 py-3 font-semibold hover:bg-primary-300 transition-colors shadow-lifted"
           >
             <Mail size={18} />
             {WEBSITE.SUPPORT_EMAIL}

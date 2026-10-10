@@ -39,12 +39,36 @@
   --radius-sm: 16px;
   --radius-md: 20px;
   --radius-lg: 24px;
+  /*
+   * The app's two card shadows (`elevatedSubtle` and the pill's `elevated`), lighter and wider
+   * than the app's: on a big page a tight shadow reads as an outline.
+   */
+  --shadow-soft: 0 6px 36px rgba(0, 0, 0, 0.03);
+  --shadow-lifted: 0 12px 56px rgba(0, 0, 0, 0.045);
+  /* The mascots' drop shadows, on the same terms. */
+  --drop-shadow-xl: 0 16px 24px rgb(0 0 0 / 0.045);
+  --drop-shadow-2xl: 0 32px 48px rgb(0 0 0 / 0.065);
+  --animate-marquee: marquee 50s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+@keyframes float {
+  50% { transform: translateY(-10px); }
 }
 
 body {
   background: var(--neutral-0);
   color: var(--neutral-900);
   font-family: var(--font-sans);
+  letter-spacing: -0.015em;
+}
+
+::selection {
+  background: var(--primary-100);
 }
 
 /* The app's H4 face: Nunito at 750, tight tracking. */
@@ -52,6 +76,46 @@ body {
   font-family: var(--font-nunito);
   font-weight: 750;
   letter-spacing: -0.02em;
+}
+
+/*
+ * The app's frosted surfaces (theme.colors.surface + border.default): warm white over a
+ * blur, edged with a 2px white highlight rather than a line. `glass` is `surface.elevated`,
+ * `glass-subtle` is `surface.elevatedSubtle` — the one the app's badges and plate pills use.
+ * Both are whiter than the app's tokens: on a wide page the colour behind bleeds through more.
+ *
+ * The blur only reaches what is behind it inside the nearest ancestor with opacity < 1, a
+ * filter or a mask. Put any of those on a child instead, or the surface turns flat.
+ */
+@utility glass {
+  background: rgb(255 253 251 / 0.88);
+  border: 2px solid rgb(255 255 255 / 0.8);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
+
+@utility glass-subtle {
+  background: rgb(255 253 251 / 0.8);
+  border: 2px solid rgb(255 255 255 / 0.7);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+/* A screen's ground: neutral.subtle fading to the background, as every list screen draws it. */
+@utility bg-screen {
+  background: linear-gradient(to bottom, var(--neutral-100), var(--neutral-0));
+}
+
+/* The orange RadialGradient the app sets off a screen's edge, at low opacity. */
+@utility glow {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 9999px;
+  background: radial-gradient(closest-side, var(--primary-500), transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee, .animate-float { animation: none; }
 }
 
 .prose {
@@ -63,4 +127,3 @@ body {
   font-weight: 750;
   color: var(--neutral-900);
 }
-
