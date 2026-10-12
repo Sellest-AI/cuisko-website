@@ -34,7 +34,10 @@ The questions and messages you send to Cuisko's AI cooking assistant.
 IP address, device type, operating system version, app version, push notification token, and other technical identifiers used to access our service.
 
 ### Usage Data
-Information about how you use the App, including recipes viewed, saved and cooked, meal plans created, and grocery lists managed.
+Information about how you use the App, including the screens you visit, recipes viewed, saved and cooked, meal plans created, and grocery lists managed.
+
+### AI Usage Records
+Each time an AI feature runs for you, we record which feature it was, the model used, the amount of processing it took and what it cost. These records never contain the text of your messages, your recipes or the AI's answers.
 
 ---
 
@@ -50,6 +53,9 @@ To suggest recipes and build meal plans that match your tastes, your dietary nee
 
 ### AI Features
 Recipes you import, messages you send to the cooking assistant, and the related context (such as your preferences and meal plan) are processed by third-party AI providers listed below to deliver the requested feature — for example turning a web page into a recipe, answering a cooking question, or estimating nutrition values. AI may also be used to generate illustrative images of recipes and ingredients. This content is processed solely to deliver the feature and is not used to train third-party models without your explicit consent.
+
+### Product Analytics
+To understand which features are used and how, and what each AI feature costs us to run, so we can improve the App and keep it affordable. Usage data and AI usage records are linked to your account identifier, not to your name or email address, and are never used for advertising.
 
 ### Communication
 To respond to your support inquiries and send you important service-related notifications, including push notifications you have allowed on your device.
@@ -74,6 +80,7 @@ To operate the App, we work with the following third-party service providers. Ea
 | **AI image generation provider** | Recipe and ingredient illustrations | Recipe and ingredient descriptions, generated images |
 | **File storage provider** | Storage of photos and images | Photos you upload, generated images |
 | **App infrastructure provider** | App delivery, over-the-air updates & push notifications | Device info, app version, notification token |
+| **Product analytics provider** (hosted in the EU) | Usage analytics & AI cost measurement | Account identifier, screens visited, AI usage records, device info, app version, IP address |
 
 All providers are contractually obligated to handle your data securely and only for the purposes we specify. Where applicable, data processing agreements (DPAs) are in place in accordance with GDPR requirements.
 
@@ -132,7 +139,7 @@ Cuisko is not directed at children under the age of 13. We do not knowingly coll
 
 ## Cookies and Tracking
 
-The App does not use advertising trackers. Technical data is collected by our infrastructure providers to deliver the App and its updates. You can manage permissions such as camera, microphone, photo library and notifications through your device settings.
+The App does not use advertising trackers, and does not track you across other companies' apps or websites. Technical data is collected by our infrastructure providers to deliver the App and its updates. Usage data is sent to our product analytics provider, which stores an anonymous identifier on your device until you sign in; from then on, it is linked to your account identifier. You can object to this processing by contacting us at **support@cuisko.app**. You can manage permissions such as camera, microphone, photo library and notifications through your device settings.
 
 ---
 
@@ -152,4 +159,4 @@ We may update this privacy policy from time to time. We will inform you of any m
 
 ## Effective Date
 
-This privacy policy is effective as of **October 2, 2026**.
+This privacy policy is effective as of **October 12, 2026**.

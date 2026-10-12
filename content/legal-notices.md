@@ -40,6 +40,7 @@ The Cuisko App relies on the following third-party service providers:
 | **AI language model provider** | Recipe import & cooking assistant | — |
 | **File storage provider** | Recipe images & media | — |
 | **App infrastructure provider** | App delivery & over-the-air updates | — |
+| **Product analytics provider** | Usage analytics & AI cost measurement | — |
 
 ---
 
@@ -55,4 +56,4 @@ Personal data collected through the Cuisko App is processed in accordance with o
 
 ---
 
-*Last updated: October 2, 2026*
+*Last updated: October 12, 2026*
