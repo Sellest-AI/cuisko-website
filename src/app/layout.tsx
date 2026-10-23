@@ -16,10 +16,26 @@ const nunito = Nunito({
   subsets: ["latin"],
 });
 
+const title = "Cuisko: Cook from what you already own";
+const description = "Cuisko plans a week of meals from the food already in your kitchen, lists only what's missing, and keeps your stock up to date as you shop and cook.";
+
+// The share image is `opengraph-image.jpg` next to this file; Next emits it for og: and twitter:.
+// No `url`: every page inherits this block, and a fixed one would point them all at the home page.
 export const metadata: Metadata = {
   metadataBase: new URL(WEBSITE.URL),
-  title: "Cuisko: Cook from what you already own",
-  description: "Cuisko plans a week of meals from the food already in your kitchen, lists only what's missing, and keeps your stock up to date as you shop and cook.",
+  title,
+  description,
+  openGraph: {
+    type: "website",
+    siteName: WEBSITE.NAME,
+    title,
+    description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({
