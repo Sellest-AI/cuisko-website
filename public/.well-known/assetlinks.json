@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.cuisko.app",
+      "sha256_cert_fingerprints": [
+        "54:6B:13:39:54:07:D7:9E:F6:60:2E:64:F2:61:DB:3F:22:53:5B:18:1D:70:26:E9:43:AA:64:43:19:72:2C:A9",
+        "E2:0D:D6:D9:DA:93:BC:6B:6A:5A:65:64:DD:8D:7B:52:D3:98:85:A3:89:F0:94:D3:6A:08:FF:03:3A:F5:AF:B6"
+      ]
+    }
+  }
+]

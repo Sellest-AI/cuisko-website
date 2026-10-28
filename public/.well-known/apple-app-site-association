@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["VD33R9X5X3.com.cuisko.app"],
+        "components": [{ "/": "/r/*" }]
+      }
+    ]
+  }
+}

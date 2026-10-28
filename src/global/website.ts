@@ -6,4 +6,6 @@ export const WEBSITE = {
   /** The app's Apple ID, `submit.production.ios.ascAppId` in ../cuisko/eas.json. */
   APP_STORE_URL: 'https://apps.apple.com/app/id6823668992',
   SUPPORT_EMAIL: 'support@cuisko.app',
+  /** The app's own scheme, `scheme` in ../cuisko/app.json: opens the app when it is installed. */
+  APP_SCHEME_URL: 'cuisko://',
 }
