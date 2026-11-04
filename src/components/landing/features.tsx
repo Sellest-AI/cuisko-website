@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { CalendarDays, Camera, Check, ChefHat, Globe, Link2, Mic, ShoppingCart, Undo2, UtensilsCrossed, ArrowRight, Type } from "lucide-react"
+import { CalendarDays, Camera, Check, ChefHat, Globe, Link2, Mic, ShoppingCart, Undo2, UtensilsCrossed, ArrowRight, Type } from "@icons"
 import { Phone } from "@/components/phone"
 import { Feature, Stage } from "@/components/landing/feature"
 import { MealCard } from "@/ui/components/meal-card"

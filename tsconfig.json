@@ -28,6 +28,9 @@
       ],
       "public/*": [
         "./public/*"
+      ],
+      "@icons": [
+        "./src/ui/components/icons.tsx"
       ]
     }
   },

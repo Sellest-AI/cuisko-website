@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ChevronDown, ShoppingCart, Store } from "lucide-react"
+import { ChevronDown, ShoppingCart, Store } from "@icons"
 import { DOWNLOAD_HREF } from "@/components/download"
 import { PillLink } from "@/ui/components/pill-link"
 import { PlateCarousel } from "@/components/landing/plate-carousel"

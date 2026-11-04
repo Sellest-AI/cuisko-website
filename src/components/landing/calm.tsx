@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { HeartHandshake, SkipForward, Users } from "lucide-react"
+import { HeartHandshake, SkipForward, Users } from "@icons"
 
 const PROMISES = [
   { icon: HeartHandshake, title: "Information, never a verdict", text: "Nutrition is shown plainly. No red warnings, no blown budgets." },

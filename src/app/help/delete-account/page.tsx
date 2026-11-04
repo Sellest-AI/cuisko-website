@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Mail } from "lucide-react"
+import { Mail } from "@icons"
 import { Metadata } from "next"
 import { WEBSITE } from "@/global"
 

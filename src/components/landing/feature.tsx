@@ -1,4 +1,4 @@
-import { Check, type LucideIcon } from "lucide-react"
+import { Check, type LucideIcon } from "@icons"
 import { cn } from "@/ui/utils"
 
 /** A screen-like ground for a visual: the app's peach-to-white gradient with a glow off one edge. */

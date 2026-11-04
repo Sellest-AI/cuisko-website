@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, type LucideIcon } from "lucide-react"
+import { ArrowRight, type LucideIcon } from "@icons"
 import { cn } from "@/ui/utils"
 
 /**

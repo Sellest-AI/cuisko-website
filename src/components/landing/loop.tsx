@@ -1,4 +1,4 @@
-import { CalendarDays, Plus, ShoppingCart, Store, type LucideIcon } from "lucide-react"
+import { CalendarDays, Plus, ShoppingCart, Store, type LucideIcon } from "@icons"
 import { cn } from "@/ui/utils"
 
 const TILES: { icon: LucideIcon, title: string, caption: string, text: string, tile: string, disc: string, muted: string }[] = [
