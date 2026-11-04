@@ -30,6 +30,9 @@ When you use voice input, your speech is transcribed by your device's speech rec
 ### Messages to the Cooking Assistant
 The questions and messages you send to Cuisko's AI cooking assistant.
 
+### Connected Assistants
+If you connect an AI assistant to Cuisko, such as Claude, we keep a record of that connection: the name the assistant gives itself, the permissions you approved, when you approved them and when the connection was last used.
+
 ### Technical Data
 IP address, device type, operating system version, app version, push notification token, and other technical identifiers used to access our service.
 
@@ -53,6 +56,9 @@ To suggest recipes and build meal plans that match your tastes, your dietary nee
 
 ### AI Features
 Recipes you import, messages you send to the cooking assistant, and the related context (such as your preferences and meal plan) are processed by third-party AI providers listed below to deliver the requested feature — for example turning a web page into a recipe, answering a cooking question, or estimating nutrition values. AI may also be used to generate illustrative images of recipes and ingredients. This content is processed solely to deliver the feature and is not used to train third-party models without your explicit consent.
+
+### Connected Assistants
+When you connect an AI assistant to your account, you allow it to search Cuisko's recipes, read them, and plan them on your household's meals, which also adds what your kitchen is missing to your grocery list. It acts on your behalf, for the household you are using in the App, and what it plans is visible to the other members of that household. It receives the recipes it asks for and the name of any dish already planned on the meal it asks about. It does not receive your preferences, allergies, kitchen stock or conversations with the cooking assistant.
 
 ### Product Analytics
 To understand which features are used and how, and what each AI feature costs us to run, so we can improve the App and keep it affordable. Usage data and AI usage records are linked to your account identifier, not to your name or email address, and are never used for advertising.
@@ -92,6 +98,8 @@ We only share your personal information with the third-party providers listed ab
 
 **Household Members** — Meal plans, grocery lists and recipes you add to a household are visible to the other members of that household.
 
+**Assistants You Connect** — When you connect an AI assistant, what it reads through Cuisko goes to that assistant's provider, which handles it under its own terms and privacy policy, not this one. We only send it after you approve the connection, and you can remove a connection at any time at **cuisko.app/connect**.
+
 **Legal Requirements** — When disclosure is necessary to comply with applicable law, regulation, or legal process.
 
 **Business Transfer** — In the event of a merger, acquisition, or sale of all or part of our assets, your data may be transferred as part of that transaction. We will notify you in advance of any such change.
@@ -112,7 +120,7 @@ We retain your personal data and content for as long as your account is active o
 
 You can delete your account at any time from the App's account settings. Your account is then scheduled for deletion and permanently deleted after **30 days**; signing back in during that period cancels the deletion. You may also request deletion by contacting us at **support@cuisko.app**.
 
-When your account is deleted, all information that identifies you — your name, email address, sign-in methods, photos, and conversations with the cooking assistant — is permanently erased. Recipes and cooking data (such as preferences and meal plans) are retained only in anonymized form, no longer linked to any person, to keep shared households working and to produce aggregate statistics. Your membership in households shared with others is removed.
+When your account is deleted, all information that identifies you — your name, email address, sign-in methods, photos, conversations with the cooking assistant, and connections to AI assistants — is permanently erased. Recipes and cooking data (such as preferences and meal plans) are retained only in anonymized form, no longer linked to any person, to keep shared households working and to produce aggregate statistics. Your membership in households shared with others is removed.
 
 ---
 
