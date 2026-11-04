@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Nunito } from "next/font/google";
 import "./globals.css";
-import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
 import { WEBSITE } from "@/global";
 
 const interSans = Inter({
@@ -46,9 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${nunito.variable} ${interSans.variable} antialiased`}>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

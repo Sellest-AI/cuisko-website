@@ -20,7 +20,7 @@ const LINKS = [
  * gradient runs up behind the bar and each page leaves room for it at its top. Once the page
  * scrolls, the bar frosts so it stays legible over content, and narrows to a centred pill.
  *
- * Rendered once, in the root layout: a sticky element stops sticking inside any `overflow-hidden`
+ * Rendered once, in the site layout: a sticky element stops sticking inside any `overflow-hidden`
  * ancestor, and every section here clips its glows.
  */
 export const Header = () => {

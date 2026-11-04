@@ -1,7 +1,8 @@
 # Agent Instructions
 
 **cuisko-web** — the marketing site for the Cuisko app (`../cuisko`): landing page, contact,
-account-deletion help and the legal pages. Next.js (App Router) + Tailwind 4. Static, no backend.
+account-deletion help and the legal pages. Next.js (App Router) + Tailwind 4. Static, with one
+exception: `/connect` talks to the app's Convex backend through `NEXT_PUBLIC_CONVEX_URL`.
 
 ## Commands
 
@@ -26,6 +27,9 @@ pnpm build         # production build — run it when touching routes, content/ 
 - Legal pages render `content/*.md` through MDX. The publisher details there, on `/contact` and in
   the app's own policies must stay identical.
 - Site-wide constants (URLs, support email) live in `src/global/website.ts`.
+- `/connect` calls functions by name through `anyApi`, so nothing here checks those paths: a rename in
+  `../cuisko/convex` breaks the page at runtime. Every access rule lives in that backend, never here.
+  Its packages match the app's versions. Locally, run it as `pnpm dev -p 8081`, the dev `SITE_URL`.
 
 ## Never
 
