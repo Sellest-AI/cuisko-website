@@ -52,12 +52,15 @@ const AssistantTiles = ({ assistant }: { assistant?: Assistant }) => {
   )
 }
 
-/** Cuisko on the left, whoever it connects to on the right, over two sheets fanned behind the card. */
+/**
+ * Cuisko on the left, whoever it connects to on the right, over two sheets fanned behind the card.
+ * Below `xs` the card fills the width, so the sheets and the border go.
+ */
 export const ConnectCard = ({ assistant, children }: { assistant?: Assistant; children: React.ReactNode }) => (
   <div className="relative w-full max-w-[440px]">
-    <div aria-hidden className="absolute inset-0 -rotate-3 rounded-lg glass-subtle shadow-lifted" />
-    <div aria-hidden className="absolute inset-0 rotate-[2.5deg] rounded-lg bg-neutral-100 border-2 border-white shadow-soft" />
-    <div className="relative rounded-lg border-2 border-white bg-neutral-0 px-6 sm:px-10 py-10 text-center shadow-lifted">
+    <div aria-hidden className="absolute inset-0 -rotate-3 rounded-lg glass-subtle shadow-lifted hidden xs:block" />
+    <div aria-hidden className="absolute inset-0 rotate-[2.5deg] rounded-lg bg-neutral-100 border-2 border-white shadow-soft hidden xs:block" />
+    <div className="relative rounded-lg xs:border-2 xs:border-white bg-neutral-0 px-6 sm:px-10 py-10 text-center shadow-lifted">
       <div className="flex items-center justify-center gap-2 sm:gap-3 mb-8">
         <Image src="/assets/mascot/icon.webp" alt="Cuisko" width={160} height={160} priority className="size-16 sm:size-20 -rotate-[5deg] rounded-sm border-2 border-white shadow-soft" />
         <LinkArrow className="mt-3" />

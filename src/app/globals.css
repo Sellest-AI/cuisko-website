@@ -35,6 +35,7 @@
   --color-secondary-500: var(--secondary-500);
   --font-sans: var(--font-inter-sans);
   --font-display: var(--font-nunito);
+  --breakpoint-xs: 30rem;
   --radius-xs: 6px;
   --radius-sm: 16px;
   --radius-md: 20px;

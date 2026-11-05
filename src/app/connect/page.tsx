@@ -15,7 +15,7 @@ export const metadata: Metadata = {
  */
 export default function ConnectPage() {
   return (
-    <main className="relative flex min-h-dvh items-center justify-center overflow-hidden bg-screen px-5 py-12">
+    <main className="relative flex min-h-dvh items-center justify-center overflow-hidden bg-screen px-3 xs:px-5 py-12">
       <div className="glow size-[800px] -top-[400px] -left-[350px] opacity-10" />
       <div className="glow size-[700px] -bottom-[400px] -right-[300px] opacity-10" />
       <Suspense>
