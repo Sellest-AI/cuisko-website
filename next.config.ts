@@ -8,6 +8,11 @@ const JSON_HEADERS = [{ key: "Content-Type", value: "application/json" }];
 const CONNECT_HEADERS = [{ key: "Content-Security-Policy", value: "frame-ancestors 'none'" }];
 
 const nextConfig: NextConfig = {
+  // Next streams a dynamic page's metadata after <head> to any client it does not know as a bot,
+  // and link-preview fetchers outside its list (Mastodon, Viber, Snapchat…) read <head> only: a
+  // shared recipe link (/r/[id]) would preview bare for them. Every client gets it in <head>; static
+  // pages are prerendered, so only a dynamic page's first byte waits for its metadata.
+  htmlLimitedBots: /.*/,
   async headers() {
     return [
       { source: "/.well-known/apple-app-site-association", headers: JSON_HEADERS },
